@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1 {
+  text-align: center;
+  color: blue;
+}
+</style>
+
+<title>YCC-C2SDK Sign Up</title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script> 
+  
+  function jsFunction(value)
+  {
+    const dates = ["01/01", "01/02", "01/03"];
+    alert(dates[value]);
+  }
+
+  function addMe()
+  {
+    alert("Added")
+  }
+</script>
+
+
+
+<!-- delete -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type=text/javascript>
+        $(function() {
+          $('a#test').on('click', function(e) {
+            e.preventDefault()
+            $.getJSON('/background_process_test',
+                function(data) {
+              //do nothing
+            });
+            return false;
+          });
+        });
+</script>
+<!-- up to here-->
+
+</head>
+
+<body>
+
+<div class="container">
+  <h1>YCC-C2SDK Sign Up Page</h1>
+ <!-- <div class="dropdown">
+    <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Select a date
+    <span class="caret"></span></button>
+    <ul name="select" id="select" class="dropdown-menu" role="menu" aria-labelledby="menu1">
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">01/01</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">01/02</a></li>
+    </ul>
+  </div> -->
+  <select class="form-select" aria-label="Default select example" id ="ddl" name="ddl" onmousedown="this.value='';" onchange="jsFunction(this.value);">
+    <option selected>--Select a date--</option>
+    <option value='0'>01/01</option>
+    <option value='1'>01/02</option>
+    <option value='2'>01/03</option>
+  </select>
+ 
+  <div class="table-responsive">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>#</th>
+	<th>Name</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+	<td>
+
+  <button type="button" class="btn btn-primary" onclick="addMe()">Add me!</button>
+
+</div>
+
+<!-- testing button-->
+<div class='container'>
+  <h3>Test</h3>
+      <form>
+          <a href=# id=test><button class='btn btn-default'>Test</button></a>
+      </form>
+
+</div>
+
+
+
+</body>
+
+</html>
